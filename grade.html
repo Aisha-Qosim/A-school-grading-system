@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="grade.css">
+</head>
+<body>
+    <h1 class="top">School Grading System</h1>
+    <label for="name" class="label">FULLNAME:</label>
+    <input type="text" class="inputs" id="FULLNAME">
+
+    <div class="page1">
+        <button class="buttons" onclick="student()">Student Name</button> <br>
+        <button class="button" onclick="grade()">Grade</button> <br>
+        <button class="butt" onclick="average()">Average</button> <br>
+        <button class="butto" onclick="total()">Total</button> <br>
+        <button class="butto" onclick="overview()">Overview</button>
+    </div>
+
+    <div id="table">
+    <table>
+        <tr class="first" onclick="but()">
+            <th class="bi">Subject</th>
+            <th id="inp1">Test 1</th>
+            <th id="inp2">Test 2</th>
+            <th id="inp3">Exam</th>
+            <th id="tot">Total</th>
+        </tr>
+        
+        <tr>
+            <td id="part1">English</td>
+            <td><input type="text" name="" id="eng"></td>
+            <td><input type="text" name="" id="engl"></td>
+            <td ><input type="text" name="" id="engli"></td> 
+            <td><input type="button" value="Total" onclick="english() " id="total1"></td>  
+         
+        </tr>
+        <tr>
+            <td id="part2">Mathematics</td>
+            <td><input type="text" name="" id="math"></td>
+            <td><input type="text" name="" id="maths"></td>
+            <td ><input type="text" name="" id="mathe"></td>   
+            <td><input type="button" value="Total" onclick="math()" id="total2"></td>
+
+        </tr>
+        <tr>
+            <td id="part3">Computer Science</td>
+            <td><input type="text" name="" id="comp"></td>
+            <td><input type="text" name="" id="compu"></td>
+            <td ><input type="text" name="" id="comput"></td>   
+            <td><input type="button" value="Total" onclick="computer()" id="total3"></td>
+        </tr>
+        <tr>
+            <td id="part4">Social Studies</td>
+            <td><input type="text" name="" id="soc"></td>
+            <td><input type="text" name="" id="soci"></td>
+            <td><input type="text" name="" id="socia"></td>   
+            <td><input type="button" value="Total" onclick="social()" id="total4"></td>
+
+        </tr>
+        <tr>
+            <td id="part5">Quantitative Reasoning</td>
+            <td><input type="text" name="" id="quant"></td>
+            <td><input type="text" name="" id="quanti"></td>
+            <td ><input type="text" name="" id="quantit"></td>   
+            <td><input type="button" value="Total" onclick="quan()" id="total5"></td>
+
+        </tr>
+        <tr>
+            <td id="part6">HomeEconomic</td>
+            <td><input type="text" name="" id="home"></td>
+            <td><input type="text" name="" id="homes"></td>
+            <td ><input type="text" name="" id="homee"></td>   
+            <td><input type="button" value="Total" onclick="home() " id="total6"></td>
+
+        </tr>
+        <tr>
+            <td id="part7">Agriculture</td>
+            <td><input type="text" name="" id="agric"></td>
+            <td><input type="text" name="" id="agricu"></td>
+            <td ><input type="text" name="" id="agricul"></td>   
+            <td><input type="button" value="Total" onclick="agric() " id="total7"></td>
+        </tr>
+        <tr>
+            <td id="part8">I.R.S</td>
+            <td><input type="text" name="" id="islam"></td>
+            <td><input type="text" name="" id="islami"></td>
+            <td ><input type="text" name="" id="islamic"></td>   
+            <td><input type="button" value="Total" onclick="islam() " id="total8"></td>
+        </tr>
+        <tr>
+            <td id="part9">Verbal Reasoning</td>   
+            <td><input type="text" name="" id="verb"></td>
+            <td><input type="text" name="" id="verba"></td>
+            <td ><input type="text" name="" id="verbal"></td>   
+            <td><input type="button" value="Total" onclick="verbal() " id="total9"></td>
+        </tr>
+        <tr>
+            <td id="part10">Literature</td>
+            <td><input type="text" name="" id="lit"></td>
+            <td><input type="text" name="" id="lite"></td>
+            <td ><input type="text" name="" id="liter"></td>   
+            <td><input type="button" value="Total" onclick="lit() " id="total10"></td>
+        </tr>
+    </table>
+    </div>
+    <div class="step2">
+        <div class="inp2"><h1>Student Name</h1></div><div class="i1" id="stud"></div>
+        <div class="inp2"><h1>Total</h1></div><div class="i1" id="total"></div>
+        <div class="inp2"><h1>Average</h1></div><div class="i1" id="aver"></div>
+        <div class="inp2"><h1>Grade</h1></div><div class="i1" id="gra"></div>
+        <div class="inp2"><h1>Overview</h1></div><div class="i1" id="over"></div>
+    </div>
+</body>
+<script src="grade.js">
+
+</script>
+</html>
